@@ -8,7 +8,6 @@ function form() {
   const form = document.querySelector(".login-form");
   const username = document.getElementById("Username");
   const password = document.getElementById("Password");
-  const message = document.querySelector(".message");
   const header = document.querySelector("header");
 
   header.style.display = "none";
