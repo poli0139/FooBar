@@ -37,6 +37,7 @@ header {
   width: 6rem;
   height: fit-content;
   margin-left: 6vw;
+  cursor: pointer;
 }
 
 main {
@@ -105,6 +106,7 @@ main {
     height: 20vw;
     left: 30%;
     top: 30%;
+    padding: 10vw;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -143,6 +145,7 @@ main {
     .progress {
       width: 5vw;
       height: 8vw;
+      border-radius: 7px;
     }
   }
 }
@@ -161,6 +164,7 @@ main {
     height: 100vh;
     top: 0;
     left: 0;
+    padding: 10vw;
   }
   .bartender {
     grid-column-start: 1;

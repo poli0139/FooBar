@@ -102,15 +102,11 @@
     width: 3vw;
     height: 5vw;
     background: variables.$background-light;
-    border-radius: 10px;
+    border-radius: 9px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     overflow: hidden;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-end;
-    // align-items: center;
   }
   .progress-fill {
     width: 100%;

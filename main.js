@@ -105,10 +105,9 @@ function loadJSON() {
 setInterval(function () {
   removeObjects();
   loadJSON();
-}, 1000000000);
+}, 10000);
 document.querySelector(".done-btn").addEventListener("click", removeTask);
 function removeTask() {
-  // console.log(jsonData);
   let task = document.querySelector(".singleOrder");
   let orderid = document.querySelector(".orderId");
 
@@ -122,7 +121,6 @@ function removeTask() {
   }, 2000);
 }
 function removeObjects() {
-  console.log("this works");
   let bottomTabs = document.querySelector(".bottomtaps");
   while (bottomTabs.firstChild) {
     bottomTabs.removeChild(bottomTabs.lastChild);
@@ -198,7 +196,6 @@ function showBeerTap(taps) {
         if (!mq || mq.matches) size = scr;
       }
 
-      console.log(size);
       if (size === "large") {
         fill.style.height = percentage;
         fill.style.width = "100%";
@@ -241,12 +238,10 @@ function showBeerTap(taps) {
 function showQueue(peopleQueue) {
   const template = document.querySelector(".nextInQueueTemplate").content;
   if (peopleQueue.length === 0) {
-    console.log("no one");
     document.querySelector(".noone").textContent = "No one is in queue.";
   } else {
     document.querySelector(".noone").textContent = "";
   }
-  // console.log(darkmode);
   peopleQueue.forEach((person) => {
     const copy = template.cloneNode(true);
     const hour = new Date(person.startTime).getHours();
@@ -287,7 +282,6 @@ function showTask(dataBase) {
 
   container.querySelector(".subheading2 span").textContent = " " + `#${servings.filter((x) => x.id === OrderToDo)[0].id}`;
 
-  console.log(servings.filter((x) => x.id === OrderToDo)[0].order);
   const beers = servings.filter((x) => x.id === OrderToDo)[0].order;
   beers.map(function (item) {
     const element = document.createElement("li");
@@ -350,7 +344,6 @@ switchDark.onclick = function () {
 modeSwitch.onclick = function () {
   if (darkmode == false) {
     darkmode = true;
-    console.log(darkmode);
     document.querySelector("body").classList.add("dark");
     document.querySelector(".bartender-img").src = "assets/bartender-yellow.png";
     document.querySelector(".switch").src = "assets/FooBar-switch2.png";

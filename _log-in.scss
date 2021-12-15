@@ -96,6 +96,7 @@ label {
   font-size: 2.5vw;
   color: variables.$dark-grey;
   font-family: variables.$semiBold;
+  cursor: pointer;
 }
 
 //End of contact form
@@ -136,8 +137,6 @@ label {
   }
   .login-form-input {
     width: 20rem;
-    
-
   }
   .login-form {
     margin-top: 20vw;
@@ -149,7 +148,6 @@ label {
     width: 4rem;
     border-top: 3.5px solid variables.$dark-grey;
     font-size: 4vw;
-
   }
   .comment {
     font-family: variables.$regular;
@@ -161,6 +159,5 @@ label {
     width: 87vw;
     text-align: left;
   }
-
 }
 //end of form
